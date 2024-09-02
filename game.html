@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+    <head><title>I'M BATMAN</title>
+      <link rel="icon" type="image/x-icon" href="image/game.jpeg">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .he{
+            font-family: 'Brush Script MT', cursive;
+        }
+        .bod{
+            /* background-image: url('image/Iron\ Man\ HD\ Wallpaper.jpg'); */
+            /* background-repeat: no-repeat; */
+            background-color: aqua;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .img{
+            margin: auto;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .about{
+            background-color: black;    
+            border-radius: 10px;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: double;
+            text-decoration: none;
+            display: inline-block;  
+            font-size: 16px;
+            margin: 800px 1500px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            height: 50px;
+            width: 120px;
+            position: absolute;
+            bottom: -130px;
+            right: -1150px;            
+        }
+        .about:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .mine{
+            background-color: black;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: double;
+            text-decoration: none;
+            display: inline-block;  
+            font-size: 16px;
+            margin: 800px 1500px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            height: 50px;
+            width: 120px;
+            position: absolute;
+            bottom: -130px;
+            right: -1300px;           
+        }
+        .mine:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .log{
+            background-color: black;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: double;
+            text-decoration: none;
+            display: inline-block;  
+            font-size: 16px;
+            margin: 800px 1500px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            height: 50px;
+            width: 120px;
+            position: absolute;
+            bottom: -130px;
+            right: -1450px;   
+        }    
+        .log:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .btn {
+  background-color: black;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            padding: 12px 16px;
+            text-align: center;
+            text-decoration: double;
+            text-decoration: none;
+            display: inline-block;  
+            font-size: 16px;
+            margin: 800px 1500px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            bottom: -130px;
+            right: -1000px;   
+}
+        .box{
+            background-color: white;
+            width: 400px;
+            height: 220px;
+            border: 3px solid black;
+            border-radius: 35px;
+            padding: 50px;
+            margin: 20px;
+            position: absolute;
+            right: 670px;
+            bottom: 200px;
+        }
+        .guess{
+            border: 2px;
+            border-color: yellow;
+            border-radius: 25px;
+            position: relative;
+            right: 50px;
+            bottom: 50px;
+        }
+        .guess:hover {
+            box-shadow: 20px 14px 18px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .coming{
+            border-radius: 25px;
+            position: relative;
+            right: 50px;
+            bottom: 50px;
+        }
+        .coming:hover {
+            box-shadow: 20px 14px 18px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .soon{
+            border-radius: 25px;
+            position: relative;
+            right: 50px;
+            bottom: 50px;
+        }
+        .soon:hover{
+            box-shadow: 20px 14px 18px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .box1{
+            background-color: white;
+            width: 400px;
+            height: 220px;
+            border: 3px solid black;
+            border-radius: 35px;
+            padding: 50px;
+            margin: 20px;
+            position: absolute;
+            right: 670px;
+            bottom: -200px;
+        }
+        .box2{
+            background-color: white;
+            width: 400px;
+            height: 220px;
+            border: 3px solid black;
+            border-radius: 35px;
+            padding: 50px;
+            margin: 20px;
+            position: absolute;
+            right: 670px;
+            bottom: -600px;
+        }
+        /* Darker background on mouse-over */
+        .btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+        }
+        
+        .end{
+            position: absolute;
+            bottom: -750px;
+            left: 600px;
+            font-family: "Lucida Console", "Courier New", monospace;
+
+        }
+        .button {
+            border-radius: 7px;
+            background-color: white;
+            border: none;
+            color: black;
+            text-align: center;
+            font-size: 18px;
+            padding: 6px;
+            width: 130px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            position: relative;
+            top: 220px;
+            left: 670px;
+        }
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button1 {
+            border-radius: 7px;
+            background-color: white;
+            border: none;
+            color: black;
+            text-align: center;
+            font-size: 18px;
+            padding: 6px;
+            width: 130px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            position: relative;
+            top: 570px;
+            left: 670px;
+        }
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 4px;
+  right: -28px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 26px;
+  transition: 0.5s;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.gam {
+  background-color: black;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            padding: 12px 16px;
+            text-align: center;
+            text-decoration: double;
+            text-decoration: none;
+            display: inline-block;  
+            font-size: 16px;
+            margin: 800px 1500px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            bottom: -130px;
+            right: -1400px;   
+}
+
+/* Darker background on mouse-over */
+.gam:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+    </style>
+    </head>
+    <body class="bod">
+        <div class="img">
+            <img src="image/d logo.jpg" alt="logo" width="300" height="220">
+        </div>
+        <div>
+            <a href="about.html"><button class="about">ABOUT YOU</button></a>
+            <a href="mine.html"><button class="mine">MY WORLD</button></a>
+        </div>
+        <div>
+            <a href="game.html"><button class="gam"><i class="fa fa-gamepad"></i></button></a>
+        </div>
+        <br><br>
+        <div>
+          <a href="index.html"><button class="btn"><i class="fa fa-home"></i></button></a>
+        </div>
+        <br>
+        <div class="box">
+            <img src="image/guess.jpg" alt="image" class="guess" height="320" width="500">
+        </div>
+        <div class="box1">
+            <img src="image/space shooter.png" alt="image" class="coming" height="320" width="500">
+        </div>
+        <div class="box2">
+            <img src="image/stay tuned.jpg" alt="image" class="soon" height="320" width="500">
+        </div>
+        <div class="end">
+            <h2>DM for Source Code!!</h2>
+        </div>
+        <div>
+           <a href="numberguessgame.html"><button class="button"><span>Play Game</span></button></a> 
+        </div>
+        
+        <div>
+           <a href="space shooter.zip"><button class="button1"><span>Play Game</span></button></a>
+           
+
+        </div>
+        <br><br>
+        <div>
+            <!-- <a href="#" class="fa fa-instagram"></a> -->
+        </div>
+      </body>
+</html>

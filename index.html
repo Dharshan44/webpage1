@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>I'm BATMAN</title>
+      <link rel="icon" type="image/x-icon" href="image/game.jpeg">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      
+      
+    <style>
+        .he{
+            font-family: 'Brush Script MT', cursive;
+        }
+        .bod{
+            /* background-image: url('image/Iron\ Man\ HD\ Wallpaper.jpg'); */
+            /* background-repeat: no-repeat; */
+            background-color: aqua;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .me{
+          width: 1100px;
+          height: 230px;
+          padding: 10px;
+          border: 3px solid black;
+          border-radius: 20px;
+          margin: 0;
+          position: relative;
+          left: 150px;
+          top: 80px;
+        }
+        .me:hover{
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .para{
+          position: absolute;
+          left: 380px;
+          bottom: 390px;    
+          font-size: x-large;
+ }    
+        .parag{
+          position: absolute;
+          left: 380px;
+          bottom: 260px;
+          font-size: medium;
+          font-family: 'Tahoma', sans-serif;
+        }
+        .mimg{
+          border-radius: 20px;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            position: absolute;
+            right: 900px;
+            top: 520px;
+            color: white;
+            background-color: black;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        .download-button:hover {
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);            
+        }
+        .img{
+            margin: auto;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .about{
+            background-color: black;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: double;
+            text-decoration: none;
+            display: inline-block;  
+            font-size: 16px;
+            margin: 800px 1500px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            height: 50px;
+            width: 120px;
+            position: absolute;
+            bottom: -130px;
+            right: -1150px;            
+        }
+        .about:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .mine{
+            background-color: black;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: double;
+            text-decoration: none;
+            display: inline-block;  
+            font-size: 16px;
+            margin: 800px 1500px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            height: 50px;
+            width: 120px;
+            position: absolute;
+            bottom: -130px;
+            right: -1300px;           
+        }
+        .mine:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .log{
+            background-color: black;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: double;
+            text-decoration: none;
+            display: inline-block;  
+            font-size: 16px;
+            margin: 800px 1500px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            height: 50px;
+            width: 120px;
+            position: absolute;
+            bottom: -130px;
+            right: -1450px;   
+        }    
+        .log:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        #load {
+            position:absolute;
+            width:600px;
+            height:36px;
+            left:50%;
+            top:40%;
+            margin-left:-300px;
+            overflow: visible;
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+            cursor:default;
+            font-size:larger;
+}
+
+#load div {
+  position:absolute;
+  width:20px;
+  height:36px;
+  opacity:0;
+  font-family:Helvetica, Arial, sans-serif;
+  animation:move 3s linear;
+  -o-animation:move 3s linear;
+  -moz-animation:move 3s linear;
+  -webkit-animation:move 3s linear;
+  transform:rotate(180deg);
+  -o-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  color:black;
+}
+
+#load div:nth-child(2) {
+  animation-delay:0.2s;
+  -o-animation-delay:0.2s;
+  -moz-animation-delay:0.2s;
+  -webkit-animation-delay:0.2s;
+}
+#load div:nth-child(3) {
+  animation-delay:0.4s;
+  -o-animation-delay:0.4s;
+  -webkit-animation-delay:0.4s;
+  -webkit-animation-delay:0.4s;
+}
+#load div:nth-child(4) {
+  animation-delay:0.6s;
+  -o-animation-delay:0.6s;
+  -moz-animation-delay:0.6s;
+  -webkit-animation-delay:0.6s;
+}
+#load div:nth-child(5) {
+  animation-delay:0.8s;
+  -o-animation-delay:0.8s;
+  -moz-animation-delay:0.8s;
+  -webkit-animation-delay:0.8s;
+}
+#load div:nth-child(6) {
+  animation-delay:1s;
+  -o-animation-delay:1s;
+  -moz-animation-delay:1s;
+  -webkit-animation-delay:1s;
+}
+#load div:nth-child(7) {
+  animation-delay:1.2s;
+  -o-animation-delay:1.2s;
+  -moz-animation-delay:1.2s;
+  -webkit-animation-delay:1.2s;
+}
+#load div:nth-child(8){
+  animation-delay:1.4s;
+  -o-animation-delay:1.4s;
+  -moz-animation-delay:1.4s;
+  -webkit-animation-delay:1.4;
+}
+#load div:nth-child(9){
+  animation-delay:1.6s;
+  -o-animation-delay:1.6s;
+  -moz-animation-delay:1.6s;
+  -webkit-animation-delay:1.6s;
+}
+@keyframes move {
+  0% {
+    left:0;
+    opacity:0;
+  }
+  35% {
+    left: 41%; 
+    -moz-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+    transform:rotate(0deg);
+    opacity:1;
+  }
+  65% {
+    left:59%; 
+    -moz-transform:rotate(0deg); 
+    -webkit-transform:rotate(0deg); 
+    -o-transform:rotate(0deg);
+    transform:rotate(90deg); 
+    opacity:1;
+  }
+  100% {
+    left:100%; 
+    -moz-transform:rotate(-180deg); 
+    -webkit-transform:rotate(-180deg); 
+    -o-transform:rotate(-180deg); 
+    transform:rotate(-180deg);
+    opacity:0;
+  }
+}
+
+@-moz-keyframes move {
+  0% {
+    left:0; 
+    opacity:0;
+  }
+  35% {
+    left:41%; 
+    -moz-transform:rotate(0deg); 
+    transform:rotate(0deg);
+    opacity:1;
+  }
+  65% {
+    left:59%; 
+    -moz-transform:rotate(0deg); 
+    transform:rotate(0deg);
+    opacity:1;
+  }
+  100% {
+    left:100%; 
+    -moz-transform:rotate(-180deg); 
+    transform:rotate(-180deg);
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    left:0; 
+    opacity:0;
+  }
+  35% {
+    left:41%; 
+    -webkit-transform:rotate(0deg); 
+    transform:rotate(0deg); 
+    opacity:1;
+  }
+  65% {
+    left:59%; 
+    -webkit-transform:rotate(0deg); 
+    transform:rotate(0deg); 
+    opacity:1;
+  }
+  100% {
+    left:100%;
+    -webkit-transform:rotate(-180deg); 
+    transform:rotate(-180deg); 
+    opacity:0;
+  }
+}
+
+@-o-keyframes move {
+  0% {
+    left:0; 
+    opacity:0;
+  }
+  35% {
+    left:41%; 
+    -o-transform:rotate(0deg); 
+    transform:rotate(0deg); 
+    opacity:1;
+  }
+  65% {
+    left:59%; 
+    -o-transform:rotate(0deg); 
+    transform:rotate(0deg); 
+    opacity:1;
+  }
+  100% {
+    left:100%; 
+    -o-transform:rotate(-180deg); 
+    transform:rotate(-180deg); 
+    opacity:0;
+  }
+}
+.btn {
+  background-color: black;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            padding: 12px 16px;
+            text-align: center;
+            text-decoration: double;
+            text-decoration: none;
+            display: inline-block;  
+            font-size: 16px;
+            margin: 800px 1500px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            bottom: -130px;
+            right: -1000px;   
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.gam {
+  background-color: black;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            padding: 12px 16px;
+            text-align: center;
+            text-decoration: double;
+            text-decoration: none;
+            display: inline-block;  
+            font-size: 16px;
+            margin: 800px 1500px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            bottom: -130px;
+            right: -1400px;   
+}
+
+/* Darker background on mouse-over */
+.gam:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+
+    </style>
+    </head>
+    <body class="bod">
+        <div class="img">
+            <img src="image/d logo.jpg" alt="logo" width="300" height="220">
+        </div>
+        <div class="me">
+            <img src="image/dharshaa.JPG" class="mimg"  alt="image" width="200px" height="220px">
+        </div>
+        <div>
+           <p class="para"><b>ABOUT ME</b></p>
+           <p class="parag">Hi there,I'm Dharshan from Tirupur. I am currently pursuing 
+            the Bachelor of Computer Applications with the Specialization 
+            <br>
+            of Devops and Automation.This is my first portfolio. Initially I was intrested in web development and succesfully crafted a <br> 
+            non-coding type of website using Carrd. Later I came to know about the coding approach for web development. And so I <br> 
+            have worked on learning scripted languages and came up with this portfolio with my knowledge on web development and <br> 
+            by refering various resources. And I have further intrests in Game Development and initiated projects from developing 2D <br>
+            GAMES. I have my own decision-making skills and other soft skills like Listening,Leadership,Critical thinking,Adaptability. <br>
+            To know more about me click here.</p>
+        </div>
+        <div>
+          <p class="par"><b></b></p>
+          <p class="paragr"></p>
+       </div>
+        <div>
+          <a href="image/my resume.png" class="download-button" download>My Resume</a>
+        </div>
+        <div>
+            <a href="about.html"><button class="about">ABOUT YOU</button></a>
+            <a href="mine.html"><button class="mine">MY WORLD</button></a>
+        </div>
+        <div>
+            <a href="game.html"><button class="gam"><i class="fa fa-gamepad"></i></button></a>
+        </div>
+        <div>
+          <a href="index.html"><button class="btn"><i class="fa fa-home"></i></button></a>
+        </div>
+        <div>
+          <i class="fas fa-gamepad"></i>
+        </div>
+        <!-- <div id="load">
+          <B><b>
+            <div>N</div>
+            <div>A</div>
+            <div>M</div>
+            <div>T</div>
+            <div>A</div>
+            <div>B</div>
+            <div> </div>
+            <div>M</div>
+            <div>I'</div>
+          </b>
+          </div> -->
+        </B>
+      </body>
+</html>
